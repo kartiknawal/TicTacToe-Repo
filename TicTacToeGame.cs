@@ -9,7 +9,7 @@ namespace TicTacToe
         char[] board = new char[10];
         public void CreateBoard()
         {
-            
+
             int i;
             for (i = 1; i <= 9; i++)
             {
@@ -27,17 +27,16 @@ namespace TicTacToe
 
         public void showBoard()
         {
-            int x = 1;
-            for (int i = 1; i <= 3; i++)
+            Console.WriteLine("The Board: ");
+            for (int i = 1; i < board.Length; i++)
             {
-                for (int j = 1; j <= 3; j++)
+                if (i == 1 || i == 4 || i == 7)
                 {
-                    Console.WriteLine(board[x] + " ");
+                    Console.WriteLine("\n");
                 }
-                Console.WriteLine("\n");
+                Console.Write(board[i] + " | ");
+
             }
         }
     }
 }
-
-

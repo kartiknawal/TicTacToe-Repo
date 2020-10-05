@@ -9,8 +9,7 @@ namespace TicTacToe
             Console.WriteLine("Welcome to Tic Tac Toe Problem");
             TicTacToeGame TicTacToe = new TicTacToeGame();
             TicTacToe.CreateBoard();
-            char player_Letter = TicTacToe.ChooseLetter();
-            char compuer_Letter = TicTacToe.ChooseLetter();
+            TicTacToe.ChooseLetter();
             TicTacToe.showBoard();
         }
     }
