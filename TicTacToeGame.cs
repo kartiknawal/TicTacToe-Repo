@@ -6,7 +6,7 @@ namespace TicTacToe
 {
     class TicTacToeGame
     {
-        public void UC1_CreateBoard()
+        public void CreateBoard()
         {
             char[] board = new char[10];
             int i;
