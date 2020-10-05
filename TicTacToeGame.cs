@@ -38,5 +38,25 @@ namespace TicTacToe
 
             }
         }
+        public void PlayerMove(char letter)
+        {
+            Console.WriteLine("Enter any index location from 1 to 9");
+
+            int position = Convert.ToInt32(Console.ReadLine());
+            if (board[position] == ' ')
+            {
+                board[position] = letter;
+            }
+            else
+            {
+                Console.WriteLine("Location already filled");
+                PlayerMove(letter);
+            }
+        }
+
+
+
+
     }
 }
+
