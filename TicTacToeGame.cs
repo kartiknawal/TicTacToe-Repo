@@ -16,5 +16,14 @@ namespace TicTacToe
 
             }
         }
+
+        public char ChooseLetter()
+        {
+            Console.WriteLine("Choose between X or O : ");
+            char letter = Convert.ToChar(Console.ReadLine());
+            return letter;
+        }
     }
 }
+
+
