@@ -31,8 +31,6 @@ namespace Social_Networking_Diagram
             dict.Add(8, user8);
             dict.Add(9, user9);
             dict.Add(10, user10);
-            
-
         }
     }
 }
