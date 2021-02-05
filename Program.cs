@@ -1,22 +1,25 @@
-﻿using System;
+using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace TicTacToe
+namespace Social_Networking_Diagram
 {
-    class Program
+    class Dataset
     {
-        static void Main(string[] args)
+        public static void GenericCollections()
         {
-            Console.WriteLine("Welcome to Tic Tac Toe Problem");
+            string[] user1 = new string[] { "Bob", "Delhi", "25", "Male" };
+            string[] user2= new string[] { "Mike","Mumbai","23","Male" };
+            string[] user3 = new string[] { "Jill", "Jaipur", "20", "Female" };
+            string[] user4 = new string[] { "Emma", "Bangalore", "27", "Female" };
 
-            TicTacToeGame TicTacToe = new TicTacToeGame();
+            Dictionary<int, string[]> dict = new Dictionary<int, string[]>();
 
-            TicTacToe.CreateBoard();
+            dict.Add(1, user1);
+            dict.Add(2, user2);
+            dict.Add(3, user3);
+            dict.Add(4, user4);
 
-            char player_Letter = TicTacToe.ChooseLetter();
-
-            TicTacToe.PlayerMove(player_Letter);
-            TicTacToe.showBoard();
-            
         }
     }
 }
